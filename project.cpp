@@ -97,11 +97,10 @@ class pet
         else
         cout<<"I am full, Let's do some other tasks.\n";
         inc_happ();
-        if(energy>20)
         if(energy<20){
         cout<<"My energy is low. Please let me take some rest."<<endl;
         }
-        else
+        else if(energy>20)
         dec_energy();
     }
     void play()
